@@ -1,0 +1,7 @@
+{
+  "coupons": [
+    { "id": "c1", "name": "满30减8券", "amount": 8.0, "threshold": 30.0, "expireTime": "2026-10-31" },
+    { "id": "c2", "name": "满45减15券", "amount": 15.0, "threshold": 45.0, "expireTime": "2026-10-31" },
+    { "id": "c3", "name": "麦乐鸡5元券", "amount": 5.0, "threshold": 0.0, "expireTime": "2026-10-20" }
+  ]
+}

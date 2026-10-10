@@ -1,0 +1,15 @@
+{
+  "foods": [
+    { "id": "m1", "name": "巨无霸", "category": "汉堡", "energy": "550 kcal", "protein": 25.0, "fat": 30.0, "carbohydrate": 46.0, "sodium": 1180.0, "calcium": 120.0, "price": 22.0, "tags": ["经典", "高热量"] },
+    { "id": "m2", "name": "板烧鸡腿堡", "category": "汉堡", "energy": "480 kcal", "protein": 28.0, "fat": 24.0, "carbohydrate": 40.0, "sodium": 1020.0, "calcium": 110.0, "price": 21.0, "tags": ["经典"] },
+    { "id": "m3", "name": "麦辣鸡腿汉堡", "category": "汉堡", "energy": "520 kcal", "protein": 26.0, "fat": 29.0, "carbohydrate": 42.0, "sodium": 1150.0, "calcium": 105.0, "price": 23.0, "tags": ["辣", "高热量"] },
+    { "id": "m5", "name": "吉士汉堡堡", "category": "汉堡", "energy": "430 kcal", "protein": 24.0, "fat": 21.0, "carbohydrate": 36.0, "sodium": 980.0, "calcium": 130.0, "price": 21.0, "tags": ["芝士"] },
+    { "id": "s1", "name": "中薯条", "category": "小食", "energy": "240 kcal", "protein": 4.0, "fat": 12.0, "carbohydrate": 30.0, "sodium": 340.0, "calcium": 20.0, "price": 7.0, "tags": ["油炸"] },
+    { "id": "s3", "name": "麦乐鸡（5块）", "category": "小食", "energy": "260 kcal", "protein": 15.0, "fat": 16.0, "carbohydrate": 13.0, "sodium": 620.0, "calcium": 40.0, "price": 12.0, "tags": ["油炸", "高蛋白"] },
+    { "id": "s4", "name": "麦乐鸡（10块）", "category": "小食", "energy": "520 kcal", "protein": 30.0, "fat": 32.0, "carbohydrate": 26.0, "sodium": 1240.0, "calcium": 80.0, "price": 21.0, "tags": ["油炸", "高蛋白"] },
+    { "id": "d1", "name": "可乐（中）", "category": "饮品", "energy": "140 kcal", "protein": 0.0, "fat": 0.0, "carbohydrate": 36.0, "sodium": 10.0, "calcium": 5.0, "price": 7.0, "tags": ["含糖"] },
+    { "id": "d2", "name": "无糖可乐（中）", "category": "饮品", "energy": "2 kcal", "protein": 0.0, "fat": 0.0, "carbohydrate": 0.0, "sodium": 5.0, "calcium": 4.0, "price": 7.0, "tags": ["零卡"] },
+    { "id": "d4", "name": "鲜煮咖啡（中）", "category": "饮品", "energy": "5 kcal", "protein": 0.3, "fat": 0.1, "carbohydrate": 0.8, "sodium": 12.0, "calcium": 15.0, "price": 10.0, "tags": ["低卡"] },
+    { "id": "ds1", "name": "麦旋风（奥利奥）", "category": "甜品", "energy": "340 kcal", "protein": 6.0, "fat": 21.0, "carbohydrate": 35.0, "sodium": 180.0, "calcium": 60.0, "price": 13.0, "tags": ["高糖"] }
+  ]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>麦轻食 · 社区美食评价 + 营养分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;padding-bottom:70px}
+header{background:#ffd400;padding:16px 20px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.hd{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.logo{font-size:22px;font-weight:800;color:#d62300;letter-spacing:-1px}
+.tag{font-size:12px;background:#fff;border:2px solid #2b2b2b;border-radius:999px;padding:2px 10px}
+nav{max-width:960px;margin:12px auto 0;display:flex;gap:8px;flex-wrap:wrap}
+nav button{border:none;background:rgba(255,255,255,.65);padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:#2b2b2b}
+nav button.on{background:#d62300;color:#fff}
+main{max-width:960px;margin:18px auto;padding:0 20px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+h2{font-size:18px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.item{border:2px solid #eee;border-radius:14px;padding:12px;cursor:pointer;transition:.15s;background:#fff}
+.item:hover{border-color:#ffc800;transform:translateY(-2px)}
+.item.sel{border-color:#d62300;background:#fff8f6}
+.emoji{font-size:32px}
+.nm{font-weight:700;margin:6px 0 2px;font-size:14px}
+.kcal{font-size:12px;color:#777}
+.bar{height:8px;background:#f0f0f0;border-radius:99px;overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;border-radius:99px}
+button.act{background:#d62300;color:#fff;border:none;padding:11px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer}
+button.ghost{background:#fff;color:#2b2b2b;border:2px solid #2b2b2b}
+input,textarea,select{width:100%;padding:11px 14px;border:2px solid #e5e5e5;border-radius:12px;font-size:14px;font-family:inherit;margin-bottom:10px}
+input:focus,textarea:focus{outline:none;border-color:#ffc800}
+.stars{font-size:30px;color:#ffc800;letter-spacing:3px;cursor:pointer}
+.stars span{color:#ddd}
+.rv{background:#fff;border-radius:16px;padding:16px;margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.rv .hd2{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.pill{font-size:11px;background:#fff4d6;padding:2px 8px;border-radius:999px;margin-right:6px}
+.like{background:none;border:1px solid #ddd;border-radius:999px;padding:4px 12px;font-size:12px;cursor:pointer;color:#666}
+.like.on{border-color:#d62300;color:#d62300;font-weight:700}
+.rec{background:linear-gradient(135deg,#fff8e1,#fff);border:2px dashed #ffc800;border-radius:14px;padding:14px;margin-bottom:10px}
+.kpi{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.kpi div{flex:1;min-width:110px;background:#faf8f5;border-radius:12px;padding:12px;text-align:center}
+.kpi b{display:block;font-size:22px;color:#d62300}
+footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #eee;padding:8px;display:flex;justify-content:space-around;font-size:11px;color:#888}
+.hide{display:none}
+.flex{display:flex;gap:10px;align-items:center}
+.flex>*{flex:1}
+.pf{color:#8a8a8a;font-size:12px;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+ <div class="hd">
+  <div class="logo">麦轻食</div>
+  <div class="tag">AI 营养分析 · 社区评价</div>
+  <div class="flex" style="margin-left:auto">
+    <button class="act ghost" onclick="askAI()">📷 拍照识别</button>
+  </div>
+ </div>
+ <nav>
+  <button class="on" data-v="rec" onclick="tab('rec',this)">推荐</button>
+  <button data-v="recs" onclick="tab('recs',this)">拍照识别</button>
+  <button data-v="write" onclick="tab('write',this)">写评价</button>
+  <button data-v="feed" onclick="tab('feed',this)">社区</button>
+  <button data-v="board" onclick="tab('board',this)">品牌看板</button>
+ </nav>
+</header>
+<main id="app"></main>
+<footer><span>原型演示数据</span><span>非官方项目</span><span>数据仅供体验</span></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

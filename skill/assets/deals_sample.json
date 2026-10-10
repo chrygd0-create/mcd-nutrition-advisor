@@ -1,0 +1,52 @@
+{
+  "deals": [
+    {
+      "id": "g1",
+      "channel": "抖音团购",
+      "name": "巨无霸中套餐单次券",
+      "items": ["m1", "d1"],
+      "price": 26.9,
+      "original_price": 29.0,
+      "per_person_limit": 3,
+      "expire": "2026-10-31",
+      "url": "https://v.douyin.com/example-g1",
+      "note": "到店核销，不可与官方券叠加"
+    },
+    {
+      "id": "g2",
+      "channel": "抖音团购",
+      "name": "板烧鸡腿堡+无糖可乐",
+      "items": ["m2", "d2"],
+      "price": 24.9,
+      "original_price": 28.0,
+      "per_person_limit": 2,
+      "expire": "2026-10-25",
+      "url": "https://v.douyin.com/example-g2",
+      "note": "到店核销，不可与官方券叠加"
+    },
+    {
+      "id": "g3",
+      "channel": "美团团购",
+      "name": "麦乐鸡10块+中薯条",
+      "items": ["s4", "s1"],
+      "price": 29.9,
+      "original_price": 31.0,
+      "per_person_limit": 1,
+      "expire": "2026-11-15",
+      "url": "https://meituan.com/example-g3",
+      "note": "部分门店可用，下单前确认门店"
+    },
+    {
+      "id": "g4",
+      "channel": "美团团购",
+      "name": "吉士汉堡堡+麦乐鸡5块套餐",
+      "items": ["m5", "s3"],
+      "price": 23.9,
+      "original_price": 33.0,
+      "per_person_limit": 2,
+      "expire": "2026-10-31",
+      "url": "https://meituan.com/example-g4",
+      "note": "到店核销，不可与官方券叠加"
+    }
+  ]
+}
